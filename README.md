@@ -6,7 +6,7 @@ Do you have a suggestion for the plugin? You can make a **pull request!**
 
 > ***(Warning: You have two versions of the ultimate discord accelerator, with more customization.)***
 
-#### Commands
+#### Convars
 
 | **ConVars**                                   | **Default Value** | **Description**                                             |
 |-----------------------------------------------|-------------------|-------------------------------------------------------------|
@@ -16,7 +16,7 @@ Do you have a suggestion for the plugin? You can make a **pull request!**
 
 > ***(Example of a webhook link: https://discord.com/api/webhooks/...)***
 
-#### Private Webhook Commands
+#### Private Webhook Convars
 
 | **ConVars**                                   | **Default Value** | **Description**                                             |
 |-----------------------------------------------|-------------------|-------------------------------------------------------------|
@@ -32,7 +32,7 @@ Do you have a suggestion for the plugin? You can make a **pull request!**
 
 > ***(Example of a map image url: https://image.gametracker.com/images/maps/160x120/(putgamenamehere)/%s.jpg)***
 
-#### Public Webhook Commands
+#### Public Webhook Convars
 
 | **ConVars**                                   | **Default Value** | **Description**                                             |
 |-----------------------------------------------|-------------------|-------------------------------------------------------------|
