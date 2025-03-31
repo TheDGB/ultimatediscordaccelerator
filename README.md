@@ -50,6 +50,7 @@ Do you have a suggestion for the plugin? You can make a **pull request!**
 - [Sourcemod 1.12+](https://www.sourcemod.net/downloads.php)
 - [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703&)
 - [Discord API](https://github.com/Cruze03/sourcemod-discord/tree/master)
+- [SM Jansson]([https://github.com/Cruze03/sourcemod-discord/tree/master](https://github.com/davenonymous/SMJansson/blob/master/pawn/scripting/include/smjansson.inc))
 
 #### Supported Games.
 - Team Fortress 2
