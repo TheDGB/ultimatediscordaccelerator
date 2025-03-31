@@ -59,18 +59,18 @@ public void OnPluginStart()
     g_cvPrivateGameName = CreateConVar("discord_crashlogger_private_gamename", "1", "Enable/disable game name (private)", _, true, 0.0, true, 1.0);
     g_cvPrivateMapThumb = CreateConVar("discord_crashlogger_private_mapthumb", "1", "Enable/disable thumbnail (private)", _, true, 0.0, true, 1.0);
     g_cvPrivateMapImage = CreateConVar("discord_crashlogger_private_mapimage", "", "Map image URL (private, use %s for map)");
-    g_cvPrivateTitle = CreateConVar("discord_crashlogger_private_title", "", "Private webhook title");
+    g_cvPrivateTitle = CreateConVar("discord_crashlogger_private_title", "Server Crashed!", "Private webhook title");
 	g_cvPrivateEmbedColor = CreateConVar("discord_crashlogger_private_embedcolor", "#FF0000", "Private embed color (hexadecimal format)");
 
     g_hWebhookPublic = CreateConVar("discord_webhook_crashlogger_public", "", "Public webhook link for crash logs", FCVAR_PROTECTED);
     g_cvPublicCrashID = CreateConVar("discord_crashlogger_public_crashid", "1", "Enable/disable crash ID (public)", _, true, 0.0, true, 1.0);
-    g_cvPublicCrashLink = CreateConVar("discord_crashlogger_public_crashlink", "1", "Enable/disable crash link (public)", _, true, 0.0, true, 1.0);
-    g_cvPublicSMVersion = CreateConVar("discord_crashlogger_public_smversion", "1", "Enable/disable SM version (public)", _, true, 0.0, true, 1.0);
-    g_cvPublicSteamInfo = CreateConVar("discord_crashlogger_public_steaminfo", "1", "Enable/disable Steam info (public)", _, true, 0.0, true, 1.0);
+    g_cvPublicCrashLink = CreateConVar("discord_crashlogger_public_crashlink", "0", "Enable/disable crash link (public)", _, true, 0.0, true, 1.0);
+    g_cvPublicSMVersion = CreateConVar("discord_crashlogger_public_smversion", "0", "Enable/disable SM version (public)", _, true, 0.0, true, 1.0);
+    g_cvPublicSteamInfo = CreateConVar("discord_crashlogger_public_steaminfo", "0", "Enable/disable Steam info (public)", _, true, 0.0, true, 1.0);
     g_cvPublicGameName = CreateConVar("discord_crashlogger_public_gamename", "1", "Enable/disable game name (public)", _, true, 0.0, true, 1.0);
-    g_cvPublicMapThumb = CreateConVar("discord_crashlogger_public_mapthumb", "1", "Enable/disable thumbnail (public)", _, true, 0.0, true, 1.0);
+    g_cvPublicMapThumb = CreateConVar("discord_crashlogger_public_mapthumb", "0", "Enable/disable thumbnail (public)", _, true, 0.0, true, 1.0);
     g_cvPublicMapImage = CreateConVar("discord_crashlogger_public_mapimage", "", "Map image URL (public, use %s for map)");
-    g_cvPublicTitle = CreateConVar("discord_crashlogger_public_title", "", "Public webhook title");
+    g_cvPublicTitle = CreateConVar("discord_crashlogger_public_title", "Server Crashed!", "Public webhook title");
 	g_cvPublicEmbedColor = CreateConVar("discord_crashlogger_public_embedcolor", "#FF0000", "Public embed color (hexadecimal format))");
 
     GetConVarString(g_hWebhook, g_sWebhook, sizeof(g_sWebhook));
@@ -246,10 +246,10 @@ void SendPrivateCrash()
     Embed.AddField("Map:", strlen(g_sLastMap) > 0 ? g_sLastMap : "Unknown", true);
 
     if(g_cvPrivateCrashID.BoolValue)
-        Embed.AddField("Crash ID:", g_sCrashID[index], true);
+        Embed.AddField("Crash ID:", g_sCrashID[index], false);
 
     if(g_cvPrivateCrashLink.BoolValue)
-        Embed.AddField("Crash Limetech Link:", sLink, true);
+        Embed.AddField("Crash Limetech Link:", sLink, false);
 
     if(g_cvPrivateSteamInfo.BoolValue)
     {
