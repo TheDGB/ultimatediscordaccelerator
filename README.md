@@ -1,5 +1,6 @@
 # Ultimate Discord Aceelerator
 This is a Source Mod plugin that sends crash reports to discord with Accelerator.
+
 This plugin is a modification of the "New Discord Accelerator" plugin by "Johnoclock" to implement more things to the plugin.
 
 Do you have a suggestion for the plugin? You can make a **pull request!**
