@@ -7,6 +7,8 @@ Do you have a suggestion for the plugin? You can make a **pull request!**
 
 > ***(Warning: You have two versions of the ultimate discord accelerator, with more customization.)***
 
+### Ultimate Discord Accelerator V2 Convars
+
 #### Convars
 
 | **ConVars**                                   | **Default Value** | **Description**                                             |
