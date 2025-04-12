@@ -29,7 +29,7 @@ Do you have a suggestion for the plugin? You can make a **pull request!**
 | `discord_crashlogger_private_steaminfo`       | `1`               | Enable/disable Steam info (private)                         |
 | `discord_crashlogger_private_gamename`        | `1`               | Enable/disable game name (private)                          |
 | `discord_crashlogger_private_mapthumb`        | `1`               | Enable/disable thumbnail (private)                          |
-| `discord_crashlogger_private_mapimage`        | ``                | Map image URL (private, use %s for map)                     |
+| `discord_crashlogger_private_mapimage`        | ``                | Map image URL (private, use %s for auto map name)           |
 | `discord_crashlogger_private_title`           | `Server Crashed!` | Private webhook title                                       |
 | `discord_crashlogger_private_embedcolor`      | `#FF0000`         | Private embed color (hexadecimal format)                    |
 
@@ -45,7 +45,7 @@ Do you have a suggestion for the plugin? You can make a **pull request!**
 | `discord_crashlogger_public_steaminfo`        | `0`               | Enable/disable Steam info (public)                          |
 | `discord_crashlogger_public_gamename`         | `1`               | Enable/disable game name (public)                           |
 | `discord_crashlogger_public_mapthumb`         | `0`               | Enable/disable thumbnail (public)                           |
-| `discord_crashlogger_public_mapimage`         | ``                | Map image URL (public, use %s for map)                      |
+| `discord_crashlogger_public_mapimage`         | ``                | Map image URL (public, use %s for auto map name)            |
 | `discord_crashlogger_public_title`            | `Server Crashed!` | Public webhook title                                        |
 | `discord_crashlogger_public_embedcolor`       | `#FF0000`         | Public embed color (hexadecimal format)                     |
 
